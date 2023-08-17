@@ -1,7 +1,9 @@
 #!/bin/bash
 echo "Hello World"
 
-echo "Ramesh: hi Suresh"
-echo "Suresh: hi Ramesh"
-echo "Ramesh: how r u Suresh"
-echo "Suresh: Iam good , how r u Ramesh"
+person1=Ramesh
+person2=suresh
+echo "$person1: hi $person2"
+echo "$person2: hi $person1"
+echo "$person1: how r u $person2"
+echo "$person2: Iam good , how r u $person1"
