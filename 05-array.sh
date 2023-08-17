@@ -4,4 +4,4 @@
 persons=("ram","sam","ramesh","suresh")
 
 echo "All Persons : ${persons[@]}"
-echo "first person :  ${persons[0]}"
+echo "first person :  ${persons[1]}"
