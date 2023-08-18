@@ -6,8 +6,8 @@ LOGFILE=/tmp/$SCRIPTNAME-$DATE.log
 USER=$(id -u)
 R="\e[31m"
 G="\e[32m"
-N="\e[0]"
-Y="\e[33"
+N="\e[0m"
+Y="\e[33m"
 VALIDATE()
 {
     echo "$1"
