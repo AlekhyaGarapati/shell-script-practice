@@ -12,10 +12,10 @@ VALIDATE()
 {
  if [ $1 -ne 0 ]
 then
-echo -e "$2 is $R incomplete "
+echo -e "$2 is $R incomplete $N"
 exit 1
 else
-echo -e "$2 is $G completed"
+echo -e "$2 is $G completed $N"
 fi
 }
 if [ $USER -ne 0 ]
