@@ -9,6 +9,7 @@ G="\e[32m"
 N="\e[0m"
 
 VALIDATE()
+echo "$1"
 {
  if [ $1 -ne 0 ]
 then
