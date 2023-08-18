@@ -1,5 +1,8 @@
 #!/bin/bash
 
+DATE=$(date)
+SCRIPTNAME=$0
+LOGFILE=/tmp/$SCRIPTNAME-$DATE.log
 USER=$(id -u)
 
 VALIDATE()
@@ -17,8 +20,8 @@ then
 echo "you need sudo access to install any software"
 exit 1
 fi
-yum install mysql -y
+yum install mysql -y &>>$LOGFILE
 VALIDATE $? "Installing MySQL"
-yum install gitt -y
+yum install gitt -y &>>$LOGFILE
 VALIDATE $? "Installing gitt"
 
