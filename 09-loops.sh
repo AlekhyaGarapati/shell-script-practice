@@ -14,7 +14,7 @@ VALIDATE()
     then
        echo -e "$R $2 Installation not successfull $N"
     else
-       echo -e "$G $2 Installation not successfull $N"
+       echo -e "$G $2 Installation successfull $N"
     fi
 }
 if [ $USER -ne 0]
