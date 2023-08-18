@@ -15,7 +15,7 @@ then
 echo -e "$2 is $R incomplete "
 exit 1
 else
-echo "$2 is $G completed"
+echo -e "$2 is $G completed"
 fi
 }
 if [ $USER -ne 0 ]
