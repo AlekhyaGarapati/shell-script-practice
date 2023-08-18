@@ -17,7 +17,7 @@ VALIDATE()
        echo -e "$G $2 Installation successfull $N"
     fi
 }
-if [ $USER -ne 0]
+if [ $USER -ne 0 ]
 then
    echo -e "$R Need Sudo Access to install into Linux $N"
    exit 1
