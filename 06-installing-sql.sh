@@ -7,7 +7,7 @@ then
    echo "U need sudo access to install"
    exit 1
 fi
-yum install mysqlll -y  
+yum install mysqll -y  
 
 if [ $? -ne 0 ]
 then 
