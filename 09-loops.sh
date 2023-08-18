@@ -15,10 +15,12 @@ VALIDATE()
        echo -e "$R $2 Installation not successfull $N"
     else
        echo -e "$G $2 Installation not successfull $N"
+    fi
 }
 if [ $USER -ne 0]
 then
    echo -e "$R Need Sudo Access to install into Linux $N"
+   exit 1
 fi
 
 for i in $@
