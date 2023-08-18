@@ -19,6 +19,6 @@ exit 1
 fi
 yum install mysql -y
 VALIDATE $? "Installing MySQL"
-yum install git -y
+yum install gitt -y
 VALIDATE $? "Installing gitt"
 
