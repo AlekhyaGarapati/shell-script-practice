@@ -27,7 +27,7 @@ fi
 for i in $@
 do
  yum list installed $i 
- if [ $1 -ne 0 ]
+ if [ $? -ne 0 ]
  then 
    echo -e "$Y $i is not installed . Lets install $N"
    yum install $i -y &>> $LOGFILE
