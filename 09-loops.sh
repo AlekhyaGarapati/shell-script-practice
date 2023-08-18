@@ -10,7 +10,7 @@ N="\e[0]"
 
 VALIDATE()
 {
-    if ( $1 ne 0 )
+    if ( $1 -ne 0 )
     then
        echo -e "$R $2 Installation not successfull $N"
     else
