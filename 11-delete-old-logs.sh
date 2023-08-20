@@ -2,7 +2,7 @@
 
 DELETE_FILES_DIR=/tmp/apps-logs
 SCRIPTNAME=$0
-DATE=$(date +%F)
+DATE=$(date)
 echo "$DATE"
 LOG_FILE=/tmp/$SCRIPTNAME-$DATE.log
 
