@@ -5,7 +5,7 @@ INPUT_STRING=$1
 REVERSE_STRING=""
 LENGTH=${#INPUT_STRING}
 echo "LENGTH : $LENGTH"
-if ($INPUT_STRING == "")
+if ($LENGTH -gt 0)
 then 
    echo "Entered If loop"
    for i in {1..$(LENGTH)}
