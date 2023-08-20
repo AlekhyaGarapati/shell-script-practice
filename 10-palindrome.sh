@@ -17,7 +17,9 @@ then
         echo "Entered String $INPUT_STRING is Palindrome"
     else
         echo "Entered String $INPUT_STRING is not Palindrome"
+    fi
 fi
+
 echo "String should not be empty, Please Enter String"
 
 
