@@ -5,7 +5,7 @@ SCRIPTNAME=$0
 DATE=$(date +F%)
 LOG_FILE=$SCRIPTNAME-$DATE.log
 
-DELETE_FILES=$(find $DELETE_FILES_DIR -name "*.log" -type f -mtime +14)
+DELETE_FILES=$(find $DELETE_FILES_DIR -name "*.log" -type f -mtime -ge+14)
 echo "$DELETE_FILES"
 while read line
 do
