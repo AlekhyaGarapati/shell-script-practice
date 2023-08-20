@@ -7,5 +7,5 @@ echo "first person : ${persons[0]}"
 
 echo "last person : ${persons[4]}"
 
-echo "All Persons : ${persons[@]}"s
+echo "All Persons : ${persons[@]}"
 

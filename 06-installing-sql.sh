@@ -7,11 +7,19 @@ then
    echo "U need sudo access to install"
    exit 1
 fi
-yum install mysqll -y  
+yum install mysql -y  
 
 if [ $? -ne 0 ]
 then 
     echo "mysql installation is not successful"
 else
     echo "mysql installation is  successful"
-fi   
+fi
+
+yum install git -y
+ if [ $? -ne 0 ]
+ then 
+    echo "git installation is not successful"
+ else
+    echo "git installation is  successful"
+fi
