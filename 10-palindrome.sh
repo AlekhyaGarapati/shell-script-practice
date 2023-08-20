@@ -12,7 +12,7 @@ then
    do
      $REVERSE_STRING=$REVERSE_STRING${INPUT_STRING:$i:1}
     done
-    if [ $REVERSE_STRING ==  $INPUT_STRING]
+    if [ $REVERSE_STRING ==  $INPUT_STRING ]
     then
         echo "Entered String $INPUT_STRING is Palindrome"
     else
