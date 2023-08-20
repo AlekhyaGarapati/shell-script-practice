@@ -8,7 +8,7 @@ echo "LENGTH : $LENGTH"
 if [ $LENGTH -ne 0 ]  
 then 
    echo "Entered If loop"
-   for i in {1..$(LENGTH)}
+   for i in {1..$LENGTH}
    do
      echo "$i"
     done
