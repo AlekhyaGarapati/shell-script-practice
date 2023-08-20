@@ -5,6 +5,13 @@ INPUT_STRING=$1
 REVERSE_STRING=""
 LENGTH=${#INPUT_STRING}
 echo "LENGTH : $LENGTH"
+if ($INPUT_STRING -ne "")
+then 
+   for i in (1..$LENGTH)
+   do
+     echo "$i"
+    done
+fi
 
 
 
