@@ -9,5 +9,6 @@ DELETE_FILES=$(find $DELETE_FILES_DIR -name "*.log" -type f -mtime +14)
 echo "$DELETE_FILES"
 while read line
 do
-  echo "alekhya"
+  echo "Deleting file $line" &>> $LOG_FILE
+  rm -rf $line
 done <<< $DELETE_FILES
