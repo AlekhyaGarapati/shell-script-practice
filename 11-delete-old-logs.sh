@@ -5,7 +5,7 @@ SCRIPTNAME=$0
 DATE=$(date)
 LOG_FILE=$SCRIPT_NAME-$DATE.log
 
-WHILE read line
+WHILE read -r line
 do
   echo "Files in delete Folder: $line"
 done <<< $DELETE_FILES
