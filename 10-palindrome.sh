@@ -8,12 +8,16 @@ echo "LENGTH : $LENGTH"
 if [ $LENGTH -ne 0 ]  
 then 
    echo "Entered If loop"
-   for i in {1..$LENGTH}
+   for ((i=$LENGTH-1; i<=0; i-- ))
    do
-     echo "$i"
+     $REVERSE_STRING=$REVERSE_STRING${INPUT_STRING:$i:1}
     done
+    if [ $REVERSE_STRING ==  $INPUT_STRING]
+    then
+        echo "Entered String $INPUT_STRING is Palindrome"
+    else
+        echo "Entered String $INPUT_STRING is not Palindrome"
 fi
-
-
+echo "String should not be empty, Please Enter String"
 
 
