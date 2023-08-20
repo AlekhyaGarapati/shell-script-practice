@@ -11,7 +11,6 @@ then
    for (( i=$LENGTH-1; i>=0; i-- ))
    do
      REVERSE_STRING="$REVERSE_STRING${INPUT_STRING:$i:1}"
-     echo "REVERSESTRING: $REVERSE_STRING"
     done
     if [ $REVERSE_STRING ==  $INPUT_STRING ]
     then
@@ -19,12 +18,7 @@ then
     else
         echo "Entered String $INPUT_STRING is not Palindrome"
     fi
+else
+echo "String should not be empty, Please Enter String"
 fi
 
-echo "String should not be empty, Please Enter String"
-
-
-for (( i=$len-1; i>=0; i-- ))
-do 
-	reverse="$reverse${input:$i:1}"
-done
