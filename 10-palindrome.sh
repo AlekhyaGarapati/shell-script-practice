@@ -8,7 +8,6 @@ LENGTH=${#INPUT_STRING}
 echo "LENGTH : $LENGTH"
 if [ $LENGTH -ne 0 ]  
 then 
-   echo "Entered If loop"
    for (( i=$LENGTH-1; i>=0; i-- ))
    do
      REVERSE_STRING="$REVERSE_STRING${INPUT_STRING:$i:1}"
