@@ -7,7 +7,8 @@ LENGTH=${#INPUT_STRING}
 echo "LENGTH : $LENGTH"
 if ($INPUT_STRING -ne "")
 then 
-   for i in (1..$LENGTH)
+   echo "Entered If loop"
+   for i in (1..$(LENGTH))
    do
      echo "$i"
     done
