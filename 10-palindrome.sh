@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Please Enter String"
-read -s input
+read input
 INPUT_STRING=$input
 REVERSE_STRING=""
 LENGTH=${#INPUT_STRING}
