@@ -11,6 +11,7 @@ then
    for ((i=$LENGTH-1; i<=0; i-- ))
    do
      $REVERSE_STRING=$REVERSE_STRING${INPUT_STRING:$i:1}
+     echo "REVERSESTRING: $REVERSE_STRING"
     done
     if [ $REVERSE_STRING ==  $INPUT_STRING ]
     then
