@@ -2,8 +2,8 @@
 
 DELETE_FILES=/home/centos/tmp/apps-logs
 SCRIPTNAME=$0
-DATE=$(date)
-LOG_FILE=$SCRIPT_NAME-$DATE.log
+DATE=$(date +F%)
+LOG_FILE=$SCRIPTNAME-$DATE.log
 
 WHILE read -r line
 do
