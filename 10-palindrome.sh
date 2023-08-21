@@ -1,9 +1,15 @@
 #!/bin/bash
 
-echo "Please Enter String"
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+
+echo -e "$Y Please Enter String $N"
 read input
 INPUT_STRING=$input
 REVERSE_STRING=""
+
 LENGTH=${#INPUT_STRING}
 
 if [ $LENGTH -ne 0 ]  
@@ -15,11 +21,11 @@ then
     done
     if [ $REVERSE_STRING ==  $INPUT_STRING ]
         then
-        echo "Entered String $INPUT_STRING is Palindrome"
+        echo -e "$G Entered String $INPUT_STRING is Palindrome $N"
     else
-        echo "Entered String $INPUT_STRING is not Palindrome"
+        echo -e "$R Entered String $INPUT_STRING is not Palindrome $N"
     fi
 else
-echo "String should not be empty, Please Enter String"
+echo -e " $Y String should not be empty, Please Enter String $N"
 fi
 
