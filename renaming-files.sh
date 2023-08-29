@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RENAME_FILES_DIR=/c/Users/agarapati3/shell-script-practice/repos/renaming-files
+RENAME_FILES_DIR=/home/centos/tmp
 
 RENAME_FILES=$(find $RENAME_FILES_DIR -name "dbo.*" -type f)
 
