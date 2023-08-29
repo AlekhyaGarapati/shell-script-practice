@@ -1,12 +1,16 @@
 #!/bin/bash
 
 RENAME_FILES_DIR= /home/centos/tmp
+for ( i in $RENAME_FILES/* )
+do 
+ echo $i
+done
 
-RENAME_FILES= $(find $RENAME_FILES_DIR -type f)
-echo $RENAME_FILES
-FILE_NAME=$(basename "$RENAME_FILES")
+# RENAME_FILES= $(find $RENAME_FILES_DIR -type f)
+# echo $RENAME_FILES
+# FILE_NAME=$(basename "$RENAME_FILES")
 
-echo $FILE_NAME
+# echo $FILE_NAME
 
 
 # "$search_dir"/*
