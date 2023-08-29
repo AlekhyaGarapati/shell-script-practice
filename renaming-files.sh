@@ -7,10 +7,11 @@ do
 mv $i $($i |cut -d "." -f2)
  newfileName= $i | cut -d "." -f2
  echo $newfileName
+done
 #  mv $i $newfileName
 
-echo "$i name changed to $newfileName"
-done
+# echo "$i name changed to $newfileName"
+# done
 
 # RENAME_FILES= $(find $RENAME_FILES_DIR -type f)
 # echo $RENAME_FILES
