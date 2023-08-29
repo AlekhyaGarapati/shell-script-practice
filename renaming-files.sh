@@ -1,6 +1,7 @@
 #!/bin/bash
 
 RENAME_FILES_DIR=/home/centos/tmp
+echo $RENAME_FILES_DIR
 FILE_NAME=$(basename "$RENAME_FILES_DIR")
 
 echo $FILE_NAME
