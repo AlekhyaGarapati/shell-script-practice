@@ -2,10 +2,10 @@
 
 RENAME_FILES_DIR=/home/centos/tmp
 FILE_NAME=$(basename "$RENAME_FILES_DIR")
-for ( i in "$FILE_NAME" )
-do
-  echo "$i"
-done
+
+echo $(FILE_NAME)
+
+
 # "$search_dir"/*
 
 # while read line
