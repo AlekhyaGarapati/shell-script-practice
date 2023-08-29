@@ -1,7 +1,8 @@
 #!/bin/bash
 
-RENAME_FILES_DIR= /tmp
-RENAME_FILES= $(find $RENAME_FILES_DIR -name "*.txt" -type f)
+RENAME_FILES_DIR= /home/centos/tmp
+
+RENAME_FILES= $(find $RENAME_FILES_DIR -type f)
 echo $RENAME_FILES
 FILE_NAME=$(basename "$RENAME_FILES")
 
