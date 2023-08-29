@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RENAME_FILES_DIR=/home/centos/tmp
+RENAME_FILES_DIR=/home/centos/tmp/dbo.file1
 echo $RENAME_FILES_DIR
 FILE_NAME=$(basename "$RENAME_FILES_DIR")
 
