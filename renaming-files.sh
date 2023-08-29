@@ -8,7 +8,7 @@ echo "$RENAME_FILES"
 
 while read line
 do
-  oldname= $LINE | cut -d "/" -f4
+  oldname= $LINE | cut -d "/" -f3
   echo "Renaming file $oldname" 
 
 done <<< $RENAME_FILES
