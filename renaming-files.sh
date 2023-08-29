@@ -1,10 +1,10 @@
 #!/bin/bash
-
+new=""
 cd /home/centos/renamefile
 echo $(pwd)
 for i in $RENAME_FILES * 
 do 
- echo $i | cut -d "." -f2
+ new= $($i | cut -d "." -f2)
  done
 #  mv $i $newfileName
 
