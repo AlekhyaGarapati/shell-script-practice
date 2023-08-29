@@ -3,7 +3,7 @@
 RENAME_FILES_DIR=/home/centos/tmp
 FILE_NAME=$(basename "$RENAME_FILES_DIR")
 
-echo $(FILE_NAME)
+echo $FILE_NAME
 
 
 # "$search_dir"/*
