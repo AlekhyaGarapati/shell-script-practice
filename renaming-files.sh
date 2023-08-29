@@ -1,8 +1,9 @@
 #!/bin/bash
 
-RENAME_FILES_DIR=/home/centos/tmp/dbo.file1
-echo $RENAME_FILES_DIR
-FILE_NAME=$(basename "$RENAME_FILES_DIR")
+RENAME_FILES_DIR=/home/centos/tmp
+RENAME_FILES= $(find $RENAME_FILES_DIR -name "dbo.*" -type f)
+echo $RENAME_FILES
+FILE_NAME=$(basename "$RENAME_FILES")
 
 echo $FILE_NAME
 
