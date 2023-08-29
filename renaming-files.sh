@@ -4,7 +4,7 @@ cd /home/centos/renamefile
 echo $(pwd)
 for i in $RENAME_FILES * 
 do 
- echo $new_filename | cut -d "." -f2
+ echo $i | cut -d "." -f2
 done
 
 # RENAME_FILES= $(find $RENAME_FILES_DIR -type f)
