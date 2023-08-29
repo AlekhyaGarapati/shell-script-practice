@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RENAME_FILES_DIR= /home/centos/renamefile
+cd /home/centos/renamefile
 echo $(pwd)
 for i in $RENAME_FILES * 
 do 
