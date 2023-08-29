@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RENAME_FILES_DIR= /home/centos/tmp
-for i in $RENAME_FILES/* 
+for i in $RENAME_FILES * 
 do 
  echo $i
 done
